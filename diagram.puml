@@ -1,0 +1,20 @@
+@startuml
+class Account
+class Admin
+class User
+class Application
+class Answer
+class Car
+class Aes256
+class Server
+class Files
+class MethodExpertEvaluation
+Admin *--Account
+User *-- Account
+Car -o User
+User -o Application
+Server *--Files
+Files*-- Aes256
+Account -o Answer
+
+@enduml
